@@ -1,0 +1,56 @@
+DESIGN C - STAGE 57 PRESPECIFIED SENSITIVITY ANALYSES
+========================================================================
+
+PRIMARY RESULT REFERENCE — FIXED, NOT RE-ESTIMATED
+--------------------------------------------------
+Stage-56 beta_hat: -0.306709156575
+
+PRESPECIFIED MODEL SENSITIVITIES
+--------------------------------
+5km_spatial_scale:
+  N=186, wells=30, years=2015-2025
+  beta=0.20291814772
+  change from primary beta=0.509627304295
+  CRV1 SE=0.115823333466
+  CRV1 p=0.0903501977358
+  CRV1 95% CI=[-0.0339671671361, 0.439803462575]
+  WCR31-Webb p=0.513451345135
+20km_spatial_scale:
+  N=203, wells=34, years=2015-2025
+  beta=-1.07255758832
+  change from primary beta=-0.765848431741
+  CRV1 SE=1.17851590475
+  CRV1 p=0.369373921069
+  CRV1 95% CI=[-3.47026622483, 1.32515104819]
+  WCR31-Webb p=0.316631663166
+complete4_track_support:
+  N=157, wells=26, years=2015-2025
+  beta=-0.293574095735
+  change from primary beta=0.0131350608408
+  CRV1 SE=0.495839699254
+  CRV1 p=0.559117773449
+  CRV1 95% CI=[-1.31477507233, 0.727626880864]
+  WCR31-Webb p=0.88398839884
+without_antecedent_groundwater:
+  N=193, wells=32, years=2015-2025
+  beta=-0.232495802156
+  change from primary beta=0.0742133544199
+  CRV1 SE=0.258348389494
+  CRV1 p=0.375094817004
+  CRV1 95% CI=[-0.759400816383, 0.294409212072]
+  WCR31-Webb p=0.440544054405
+
+LEAVE-ONE-WELL-OUT PRIMARY COEFFICIENT DIAGNOSTIC
+-------------------------------------------------
+Fits: 32
+Coefficient range: [-0.369156877437, 0.086136068106]
+Negative coefficients: 31/32
+Positive coefficients: 1/32
+
+INTERPRETIVE GUARDRAILS
+-----------------------
+Primary Stage-56 result remains primary regardless of these sensitivities.
+No sensitivity is a basis for excluding wells or redesigning the model.
+All estimates remain observational and non-causal.
+
+STAGE 57 STATUS: PASS_PRESPECIFIED_SENSITIVITIES_EXECUTED_NO_NEW_MODEL_SEARCH
