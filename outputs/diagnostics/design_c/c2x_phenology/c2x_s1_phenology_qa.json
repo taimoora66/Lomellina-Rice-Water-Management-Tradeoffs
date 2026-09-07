@@ -1,0 +1,90 @@
+{
+  "stage": "DESIGN_C_C2X_PH_OUTCOME_BLIND_SENTINEL1_PHENOLOGY_CONSTRUCTION",
+  "generated_utc": "2026-09-07T17:50:07.862090+00:00",
+  "status": "PASS_OUTCOME_BLIND_PHENOLOGY_CONSTRUCTION",
+  "input_root": "outputs\\diagnostics\\design_c\\c2v\\primary_mosaic",
+  "input_mosaic_files_n": 44,
+  "expected_mosaic_files_n": 44,
+  "unique_input_schemas_n": 1,
+  "years_expected": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "tracks_expected": [
+    {
+      "orbit_state": "ascending",
+      "relative_orbit": 15
+    },
+    {
+      "orbit_state": "ascending",
+      "relative_orbit": 88
+    },
+    {
+      "orbit_state": "descending",
+      "relative_orbit": 66
+    },
+    {
+      "orbit_state": "descending",
+      "relative_orbit": 168
+    }
+  ],
+  "track_year_combinations_expected_n": 44,
+  "track_year_combinations_observed_n": 44,
+  "missing_track_year_combinations": [],
+  "unexpected_track_year_combinations": [],
+  "support_ids_expected_n": 4331,
+  "support_ids_observed_n": 4331,
+  "feature_rows_n": 190564,
+  "maximum_possible_support_track_year_rows_n": 190564,
+  "calendar_windows": {
+    "early_season": {
+      "start_mm_dd": "04-01",
+      "end_mm_dd": "05-31",
+      "interpretation": "fixed calendar stratum; not field-observed crop stage"
+    },
+    "mid_season": {
+      "start_mm_dd": "06-01",
+      "end_mm_dd": "07-15",
+      "interpretation": "fixed calendar stratum; not field-observed crop stage"
+    },
+    "late_season": {
+      "start_mm_dd": "07-16",
+      "end_mm_dd": "09-30",
+      "interpretation": "fixed calendar stratum; not field-observed crop stage"
+    }
+  },
+  "primary_signals": {
+    "VV": "vv_sigma0_corrected_db",
+    "VH": "vh_sigma0_corrected_db",
+    "VV_minus_VH": "vv_minus_vh_db"
+  },
+  "track_pooling_performed": false,
+  "cross_track_standardization_performed": false,
+  "missing_signal_imputation_performed": false,
+  "temporal_interpolation_performed": false,
+  "nonpositive_corrected_power_recovered_or_clipped": false,
+  "groundwater_values_read": false,
+  "irrigation_flow_values_read": false,
+  "ricefloodit_flood_values_read": false,
+  "inundation_threshold_selected": false,
+  "classifier_fitted": false,
+  "feature_selection_against_outcomes_performed": false,
+  "association_models_fitted": 0,
+  "hard_flags": [],
+  "outputs": {
+    "track_year_phenology_features": "outputs\\diagnostics\\design_c\\c2x_phenology\\c2x_s1_track_year_phenology_features.csv.gz",
+    "track_year_sampling_qa": "outputs\\diagnostics\\design_c\\c2x_phenology\\c2x_s1_track_year_sampling_qa.csv",
+    "feature_dictionary": "outputs\\diagnostics\\design_c\\c2x_phenology\\c2x_s1_feature_dictionary.csv",
+    "qa_json": "outputs\\diagnostics\\design_c\\c2x_phenology\\c2x_s1_phenology_qa.json",
+    "summary_txt": "outputs\\diagnostics\\design_c\\c2x_phenology\\c2x_s1_phenology_summary.txt"
+  }
+}

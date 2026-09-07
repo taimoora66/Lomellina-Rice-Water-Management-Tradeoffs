@@ -1,0 +1,24 @@
+DESIGN C - STAGE 45 INDEPENDENT SENTINEL-1 PHENOLOGY FEATURE AUDIT
+==============================================================================
+
+Feature rows: 190564 / expected 190564
+Support IDs: 4331 / expected 4331
+Track-year combinations: 44 / expected 44
+Independent recompute cases: 308
+Independent recompute failures: 0
+
+HARD QA FLAGS
+-------------
+None
+
+FIREWALL
+--------
+Groundwater read: False
+Irrigation-flow read: False
+RiceFloodIT flood values read: False
+Threshold selected: False
+Classifier fitted: False
+Outcome-based feature selection: False
+Association model fitted: False
+
+STAGE 45 STATUS: PASS_PHENOLOGY_FEATURE_FREEZE_READY

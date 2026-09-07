@@ -1,0 +1,82 @@
+feature,family,description,outcome_tuned,imputation_used
+support_id,identifier,Fixed RiceFloodIT-compatible support-coordinate identifier.,False,False
+year,identifier,Calendar year of the frozen rice-season track-year series.,False,False
+orbit_state,identifier,Sentinel-1 orbit state; track families are not pooled.,False,False
+relative_orbit,identifier,Sentinel-1 relative orbit; track families are not pooled.,False,False
+lon,identifier,Fixed support longitude.,False,False
+lat,identifier,Fixed support latitude.,False,False
+support_dates_n,sampling,Unique acquisition dates represented by rows for this support/track/year.,False,False
+vv_observed_dates_n,sampling,Dates with valid corrected VV observation.,False,False
+vh_observed_dates_n,sampling,Dates with valid corrected VH observation.,False,False
+both_observed_dates_n,sampling,Dates with both corrected VV and VH observed.,False,False
+vv_observed_fraction,sampling,VV observed dates divided by support_dates_n; no imputation.,False,False
+vh_observed_fraction,sampling,VH observed dates divided by support_dates_n; no imputation.,False,False
+both_observed_fraction,sampling,Both-polarization observed dates divided by support_dates_n; no imputation.,False,False
+median_gap_days,sampling,Median gap between represented acquisition dates.,False,False
+max_gap_days,sampling,Maximum gap between represented acquisition dates.,False,False
+vv_n,seasonal_distribution,VV corrected sigma0 dB: Number of finite observations.,False,False
+vv_median_db,seasonal_distribution,VV corrected sigma0 dB: Median across finite rice-season observations.,False,False
+vv_p10_db,seasonal_distribution,VV corrected sigma0 dB: 10th percentile.,False,False
+vv_p25_db,seasonal_distribution,VV corrected sigma0 dB: 25th percentile.,False,False
+vv_p75_db,seasonal_distribution,VV corrected sigma0 dB: 75th percentile.,False,False
+vv_p90_db,seasonal_distribution,VV corrected sigma0 dB: 90th percentile.,False,False
+vv_min_db,seasonal_distribution,VV corrected sigma0 dB: Minimum.,False,False
+vv_max_db,seasonal_distribution,VV corrected sigma0 dB: Maximum.,False,False
+vv_iqr_db,seasonal_distribution,VV corrected sigma0 dB: 75th minus 25th percentile.,False,False
+vv_range_db,seasonal_distribution,VV corrected sigma0 dB: Maximum minus minimum.,False,False
+vv_valid_steps_n,temporal_change,VV corrected sigma0 dB: Number of consecutive valid-observation intervals.,False,False
+vv_max_negative_step_db,temporal_change,VV corrected sigma0 dB: Most negative change between consecutive available valid observations.,False,False
+vv_max_positive_step_db,temporal_change,VV corrected sigma0 dB: Most positive change between consecutive available valid observations.,False,False
+vv_median_abs_step_db,temporal_change,VV corrected sigma0 dB: Median absolute change between consecutive available valid observations.,False,False
+vv_max_negative_rate_db_per_day,temporal_change,VV corrected sigma0 dB: Most negative consecutive-observation change normalized by elapsed days.,False,False
+vv_max_positive_rate_db_per_day,temporal_change,VV corrected sigma0 dB: Most positive consecutive-observation change normalized by elapsed days.,False,False
+vv_median_abs_rate_db_per_day,temporal_change,VV corrected sigma0 dB: Median absolute consecutive-observation change normalized by elapsed days.,False,False
+vh_n,seasonal_distribution,VH corrected sigma0 dB: Number of finite observations.,False,False
+vh_median_db,seasonal_distribution,VH corrected sigma0 dB: Median across finite rice-season observations.,False,False
+vh_p10_db,seasonal_distribution,VH corrected sigma0 dB: 10th percentile.,False,False
+vh_p25_db,seasonal_distribution,VH corrected sigma0 dB: 25th percentile.,False,False
+vh_p75_db,seasonal_distribution,VH corrected sigma0 dB: 75th percentile.,False,False
+vh_p90_db,seasonal_distribution,VH corrected sigma0 dB: 90th percentile.,False,False
+vh_min_db,seasonal_distribution,VH corrected sigma0 dB: Minimum.,False,False
+vh_max_db,seasonal_distribution,VH corrected sigma0 dB: Maximum.,False,False
+vh_iqr_db,seasonal_distribution,VH corrected sigma0 dB: 75th minus 25th percentile.,False,False
+vh_range_db,seasonal_distribution,VH corrected sigma0 dB: Maximum minus minimum.,False,False
+vh_valid_steps_n,temporal_change,VH corrected sigma0 dB: Number of consecutive valid-observation intervals.,False,False
+vh_max_negative_step_db,temporal_change,VH corrected sigma0 dB: Most negative change between consecutive available valid observations.,False,False
+vh_max_positive_step_db,temporal_change,VH corrected sigma0 dB: Most positive change between consecutive available valid observations.,False,False
+vh_median_abs_step_db,temporal_change,VH corrected sigma0 dB: Median absolute change between consecutive available valid observations.,False,False
+vh_max_negative_rate_db_per_day,temporal_change,VH corrected sigma0 dB: Most negative consecutive-observation change normalized by elapsed days.,False,False
+vh_max_positive_rate_db_per_day,temporal_change,VH corrected sigma0 dB: Most positive consecutive-observation change normalized by elapsed days.,False,False
+vh_median_abs_rate_db_per_day,temporal_change,VH corrected sigma0 dB: Median absolute consecutive-observation change normalized by elapsed days.,False,False
+vv_minus_vh_n,seasonal_distribution,VV minus VH dB: Number of finite observations.,False,False
+vv_minus_vh_median_db,seasonal_distribution,VV minus VH dB: Median across finite rice-season observations.,False,False
+vv_minus_vh_p10_db,seasonal_distribution,VV minus VH dB: 10th percentile.,False,False
+vv_minus_vh_p25_db,seasonal_distribution,VV minus VH dB: 25th percentile.,False,False
+vv_minus_vh_p75_db,seasonal_distribution,VV minus VH dB: 75th percentile.,False,False
+vv_minus_vh_p90_db,seasonal_distribution,VV minus VH dB: 90th percentile.,False,False
+vv_minus_vh_min_db,seasonal_distribution,VV minus VH dB: Minimum.,False,False
+vv_minus_vh_max_db,seasonal_distribution,VV minus VH dB: Maximum.,False,False
+vv_minus_vh_iqr_db,seasonal_distribution,VV minus VH dB: 75th minus 25th percentile.,False,False
+vv_minus_vh_range_db,seasonal_distribution,VV minus VH dB: Maximum minus minimum.,False,False
+vv_minus_vh_valid_steps_n,temporal_change,VV minus VH dB: Number of consecutive valid-observation intervals.,False,False
+vv_minus_vh_max_negative_step_db,temporal_change,VV minus VH dB: Most negative change between consecutive available valid observations.,False,False
+vv_minus_vh_max_positive_step_db,temporal_change,VV minus VH dB: Most positive change between consecutive available valid observations.,False,False
+vv_minus_vh_median_abs_step_db,temporal_change,VV minus VH dB: Median absolute change between consecutive available valid observations.,False,False
+vv_minus_vh_max_negative_rate_db_per_day,temporal_change,VV minus VH dB: Most negative consecutive-observation change normalized by elapsed days.,False,False
+vv_minus_vh_max_positive_rate_db_per_day,temporal_change,VV minus VH dB: Most positive consecutive-observation change normalized by elapsed days.,False,False
+vv_minus_vh_median_abs_rate_db_per_day,temporal_change,VV minus VH dB: Median absolute consecutive-observation change normalized by elapsed days.,False,False
+early_season_vv_median_db,fixed_calendar_window,"Median vv dB in fixed early_season calendar window; calendar stratum, not field-observed crop stage.",False,False
+early_season_vh_median_db,fixed_calendar_window,"Median vh dB in fixed early_season calendar window; calendar stratum, not field-observed crop stage.",False,False
+early_season_vv_minus_vh_median_db,fixed_calendar_window,"Median vv_minus_vh dB in fixed early_season calendar window; calendar stratum, not field-observed crop stage.",False,False
+early_season_support_dates_n,fixed_calendar_window_sampling,Unique represented acquisition dates in fixed early_season window.,False,False
+early_season_both_observed_dates_n,fixed_calendar_window_sampling,Dates with both VV and VH observed in fixed early_season window.,False,False
+mid_season_vv_median_db,fixed_calendar_window,"Median vv dB in fixed mid_season calendar window; calendar stratum, not field-observed crop stage.",False,False
+mid_season_vh_median_db,fixed_calendar_window,"Median vh dB in fixed mid_season calendar window; calendar stratum, not field-observed crop stage.",False,False
+mid_season_vv_minus_vh_median_db,fixed_calendar_window,"Median vv_minus_vh dB in fixed mid_season calendar window; calendar stratum, not field-observed crop stage.",False,False
+mid_season_support_dates_n,fixed_calendar_window_sampling,Unique represented acquisition dates in fixed mid_season window.,False,False
+mid_season_both_observed_dates_n,fixed_calendar_window_sampling,Dates with both VV and VH observed in fixed mid_season window.,False,False
+late_season_vv_median_db,fixed_calendar_window,"Median vv dB in fixed late_season calendar window; calendar stratum, not field-observed crop stage.",False,False
+late_season_vh_median_db,fixed_calendar_window,"Median vh dB in fixed late_season calendar window; calendar stratum, not field-observed crop stage.",False,False
+late_season_vv_minus_vh_median_db,fixed_calendar_window,"Median vv_minus_vh dB in fixed late_season calendar window; calendar stratum, not field-observed crop stage.",False,False
+late_season_support_dates_n,fixed_calendar_window_sampling,Unique represented acquisition dates in fixed late_season window.,False,False
+late_season_both_observed_dates_n,fixed_calendar_window_sampling,Dates with both VV and VH observed in fixed late_season window.,False,False

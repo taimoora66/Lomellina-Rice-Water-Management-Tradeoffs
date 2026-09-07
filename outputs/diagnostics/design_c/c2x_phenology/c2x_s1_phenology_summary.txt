@@ -1,0 +1,39 @@
+DESIGN C - C2X-PH OUTCOME-BLIND SENTINEL-1 PHENOLOGY CONSTRUCTION
+======================================================================================
+
+Input mosaic files: 44 / expected 44
+Unique input schemas: 1
+Track-year combinations: 44 / expected 44
+Support IDs represented: 4331 / expected 4331
+Feature rows produced: 190564
+
+FROZEN FEATURE ARCHITECTURE
+---------------------------
+Signals: corrected VV dB, corrected VH dB, VV-VH dB.
+Tracks remain separate: asc15, asc88, desc66, desc168.
+Whole-season distributional descriptors are prespecified.
+Consecutive-observation change descriptors are prespecified.
+Calendar strata: early 04-01..05-31; mid 06-01..07-15; late 07-16..09-30.
+Calendar strata are not treated as field-observed crop-development stages.
+
+MISSINGNESS
+-----------
+Missing corrected Sentinel-1 observations remain missing.
+No temporal interpolation, nearest-date replacement, clipping, or imputation.
+Sampling density and temporal gaps are retained as QA features.
+
+HARD QA FLAGS
+-------------
+None
+
+FIREWALL
+--------
+Groundwater read: False
+Irrigation-flow read: False
+RiceFloodIT flood values read: False
+Threshold selected: False
+Classifier fitted: False
+Outcome-based feature selection: False
+Association model fitted: False
+
+C2X-PH STATUS: PASS_OUTCOME_BLIND_PHENOLOGY_CONSTRUCTION

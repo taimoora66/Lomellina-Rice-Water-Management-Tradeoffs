@@ -1,0 +1,30 @@
+{
+  "stage": "DESIGN_C_STAGE45_INDEPENDENT_SENTINEL1_PHENOLOGY_AUDIT",
+  "generated_utc": "2026-09-07T18:11:46.692640+00:00",
+  "status": "PASS_PHENOLOGY_FEATURE_FREEZE_READY",
+  "feature_rows_n": 190564,
+  "expected_feature_rows_n": 190564,
+  "support_ids_n": 4331,
+  "track_year_combinations_n": 44,
+  "deterministic_recompute_support_ids": [
+    "RFIT_0001",
+    "RFIT_0723",
+    "RFIT_1444",
+    "RFIT_2166",
+    "RFIT_2888",
+    "RFIT_3609",
+    "RFIT_4331"
+  ],
+  "deterministic_recompute_cases_n": 308,
+  "deterministic_recompute_failures_n": 0,
+  "hard_flags": [],
+  "groundwater_values_read": false,
+  "irrigation_flow_values_read": false,
+  "ricefloodit_flood_values_read": false,
+  "inundation_threshold_selected": false,
+  "classifier_fitted": false,
+  "outcome_based_feature_selection_performed": false,
+  "association_models_fitted": 0,
+  "track_pooling_performed": false,
+  "missing_signal_imputation_performed": false
+}
