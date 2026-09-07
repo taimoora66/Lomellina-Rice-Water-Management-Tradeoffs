@@ -1,0 +1,67 @@
+{
+  "stage": "DESIGN_C_STAGE53B_V2_COMPLETE_GROUNDWATER_S1_PANEL",
+  "generated_utc": "2026-09-07T21:00:40.955965+00:00",
+  "status": "FAIL_REVIEW_REQUIRED",
+  "station_universe_context": {
+    "all_metadata_stations_n": 68,
+    "aquifer_group_counts": {
+      "ISS": 37,
+      "ISI": 22,
+      "ISP": 7,
+      "OTHER": 2
+    },
+    "historical_iss_wells_n": 37,
+    "frozen_exclusions": [
+      "PO0180930U0006",
+      "PO0181870U0001"
+    ],
+    "candidate_iss_after_exclusions_n": 35
+  },
+  "groundwater_temporally_eligible_well_years_n": 203,
+  "primary_complete_well_years_n": 193,
+  "primary_wells_n": 32,
+  "primary_wells_with_at_least_2_years_n": 32,
+  "primary_years": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "frozen_post2021_complete_counts_expected": {
+    "2022": 17,
+    "2023": 13,
+    "2024": 15,
+    "2025": 17
+  },
+  "frozen_post2021_complete_counts_observed": {
+    "2022": 17,
+    "2023": 13,
+    "2024": 15,
+    "2025": 17
+  },
+  "hard_flags": [
+    "ONE_OR_MORE_WELLS_HAVE_ZERO_10KM_S1_SUPPORT"
+  ],
+  "groundwater_values_read": true,
+  "sentinel1_frozen_exposure_read": true,
+  "irrigation_flow_values_read": false,
+  "hydrological_association_model_fitted": false,
+  "groundwater_driven_station_exclusion": false,
+  "groundwater_driven_radius_selection": false,
+  "groundwater_driven_s1_feature_selection": false,
+  "sha256": {
+    "historical_groundwater_clean": "1f32a4ad5f7c589ba4a1f05751db250c961077a3a19a41fcf0018457bac1c477",
+    "raw_2024": "8e0f8e1f6cc9a621f674fe833ef8df153f017ae3325fe7823184df74dd3857e8",
+    "raw_2025": "d9c5ce5120566313cce4366bf66bf0e821f393a22228281b74a1c9fa5d1f128f",
+    "stage52_protocol": "20a01bd6ae81c7ccae32514075732d2a0ab39cedf3b2eead3767c2e261a16dd6",
+    "stage51_s1_exposure": "29b50d1e50454bda07eb559499ee9978605dcc6359aa8cdefdb07aaa89617f4b",
+    "analysis_panel": "c00c391cbda5b018cdde174be36613b7437e4004cd1e317af05a0795ba084d6f"
+  }
+}

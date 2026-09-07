@@ -1,0 +1,51 @@
+DESIGN C - STAGE 54 INDEPENDENT PRIMARY PANEL AUDIT
+==========================================================================
+
+PANEL STRUCTURE
+---------------
+Rows: 193
+Wells: 32
+Years: [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
+Duplicate station-years: 0
+
+POST-2021 COUNTS
+----------------
+2022: 17
+2023: 13
+2024: 15
+2025: 17
+
+INDEPENDENT 10-KM S1 RECOMPUTATION
+----------------------------------
+Checks: 9
+Failures: 0
+
+DESIGN RANK
+-----------
+Columns: 44
+Rank: 44
+Full rank: True
+
+IDENTIFYING VARIATION IN FROZEN S1 EXPOSURE
+-------------------------------------------
+Raw SD: 0.298084518127
+After station FE SD: 0.259243133355
+After year FE SD: 0.171494756299
+After station + year FE SD: 0.099893851534
+After station + year FE + antecedent GW SD: 0.099759723574
+Fully adjusted variance / raw variance: 0.112003510165
+
+HARD QA FLAGS
+-------------
+None
+
+FIREWALL
+--------
+Groundwater values read: True
+Frozen Sentinel-1 exposure read: True
+Association coefficient fitted: False
+Association coefficient reported: False
+Irrigation-flow values read: False
+Model search performed: False
+
+STAGE 54 STATUS: PASS_PRIMARY_PANEL_AUDITED_AND_READY_FOR_FIRST_ASSOCIATION_FIT

@@ -1,0 +1,54 @@
+{
+  "stage": "DESIGN_C_STAGE54_INDEPENDENT_PRIMARY_PANEL_AUDIT",
+  "generated_utc": "2026-09-07T21:10:09.247709+00:00",
+  "status": "PASS_PRIMARY_PANEL_AUDITED_AND_READY_FOR_FIRST_ASSOCIATION_FIT",
+  "panel_rows_n": 193,
+  "panel_wells_n": 32,
+  "panel_years": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "post2021_counts": {
+    "2022": 17,
+    "2023": 13,
+    "2024": 15,
+    "2025": 17
+  },
+  "independent_s1_recompute_checks_n": 9,
+  "independent_s1_recompute_failures_n": 0,
+  "design_matrix": {
+    "columns_n": 44,
+    "rank": 44,
+    "full_rank": true
+  },
+  "identifying_variation": {
+    "raw_s1_sd": 0.2980845181270641,
+    "twfe_residual_s1_sd": 0.09989385153409686,
+    "fully_adjusted_residual_s1_sd": 0.09975972357428967,
+    "fully_adjusted_variance_fraction_of_raw": 0.1120035101651707
+  },
+  "hard_flags": [],
+  "firewall": {
+    "groundwater_values_read": true,
+    "frozen_s1_exposure_read": true,
+    "association_coefficient_fitted": false,
+    "association_coefficient_reported": false,
+    "irrigation_flow_values_read": false,
+    "model_search_performed": false
+  },
+  "sha256": {
+    "stage52_protocol": "20a01bd6ae81c7ccae32514075732d2a0ab39cedf3b2eead3767c2e261a16dd6",
+    "stage53c_manifest": "986a0c240733d0e0f03b8cb89b1e96b0d0f968ea093c1d847c5e32fc346ff924",
+    "frozen_primary_panel": "99983f7d397e4b8252b3ec4557ce05d54f9b4b4c3575c7c460592f20c02b7d60",
+    "stage50_s1_support_year": "29b50d1e50454bda07eb559499ee9978605dcc6359aa8cdefdb07aaa89617f4b"
+  }
+}

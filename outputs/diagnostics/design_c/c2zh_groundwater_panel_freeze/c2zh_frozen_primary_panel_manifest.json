@@ -1,0 +1,73 @@
+{
+  "stage": "DESIGN_C_STAGE53C_GROUNDWATER_PANEL_FREEZE",
+  "generated_utc": "2026-09-07T21:07:07.763774+00:00",
+  "status": "PASS_PRIMARY_PANEL_FROZEN_WITH_DOCUMENTED_STRUCTURAL_NONOVERLAP",
+  "primary_panel_rule": "valid August-median groundwater outcome + valid last-JanFeb antecedent groundwater + valid frozen 10-km S1 exposure",
+  "documented_structural_spatial_nonoverlap": {
+    "radius_m": 10000,
+    "wells": [
+      "PO0181220U0001",
+      "PO0181550U0001"
+    ],
+    "well_years_lost_n": 10,
+    "lost_years_by_well": {
+      "PO0181220U0001": [
+        2016,
+        2017,
+        2019
+      ],
+      "PO0181550U0001": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021
+      ]
+    },
+    "classification": "mechanical exposure ineligibility, not groundwater-driven exclusion",
+    "20km_substitution_allowed": false
+  },
+  "counts": {
+    "temporally_eligible_groundwater_well_years_n": 203,
+    "primary_complete_well_years_n": 193,
+    "primary_wells_n": 32,
+    "primary_wells_with_ge2_years_n": 32,
+    "primary_years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "post2021_primary_counts": {
+      "2022": 17,
+      "2023": 13,
+      "2024": 15,
+      "2025": 17
+    }
+  },
+  "hard_flags": [],
+  "firewall": {
+    "groundwater_values_read": true,
+    "frozen_s1_exposure_read": true,
+    "irrigation_flow_values_read": false,
+    "hydrological_association_model_fitted": false,
+    "groundwater_driven_station_exclusion": false,
+    "groundwater_driven_radius_selection": false,
+    "20km_used_to_rescue_primary": false
+  },
+  "sha256": {
+    "stage52_protocol": "20a01bd6ae81c7ccae32514075732d2a0ab39cedf3b2eead3767c2e261a16dd6",
+    "stage53b_panel": "c00c391cbda5b018cdde174be36613b7437e4004cd1e317af05a0795ba084d6f",
+    "stage53b_linkage_qa": "c4677f49ea78b165517bcc70bb33d3afa060255af3eb83ec43de6d172beb1e92",
+    "frozen_primary_panel": "99983f7d397e4b8252b3ec4557ce05d54f9b4b4c3575c7c460592f20c02b7d60"
+  }
+}

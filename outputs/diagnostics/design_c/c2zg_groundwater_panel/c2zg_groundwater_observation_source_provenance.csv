@@ -1,0 +1,4 @@
+source_role,path,years_used,authoritative_for
+historical_observation_level,data\processed\publication_groundwater\groundwater_clean.csv,2015-2023,2015-2023
+authoritative_2024_observation_level,data\raw\arpa\groundwater_pavia_2024\pavia_groundwater_quantitative_2024_update_2025-10-14.xlsx,2024,2024
+authoritative_2025_observation_level,data\raw\arpa\groundwater_2025\lombardia_groundwater_quantitative_2025.xlsx,2025,2025

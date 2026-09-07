@@ -1,0 +1,40 @@
+DESIGN C - STAGE 53A GROUNDWATER SOURCE PREFLIGHT
+==========================================================================
+
+Observation source: data\processed\publication_groundwater\groundwater_clean.csv
+Valid groundwater date range (all aquifer groups): 2008-01-07 to 2023-12-28
+Valid ISS date range: 2008-01-07 to 2023-12-28
+ISS stations after frozen exclusions: 35
+Temporally eligible ISS station-years, 2015-2025: 171
+
+YEAR COVERAGE
+-------------
+ year  iss_observation_rows_n  iss_stations_any_obs_n  iss_aug_valid_obs_n  iss_aug_stations_n  iss_janfeb_valid_obs_n  iss_janfeb_stations_n  temporally_eligible_stations_n
+ 2015                     179                      28                    8                   8                      26                     16                               8
+ 2016                     328                      33                   29                  29                      39                     26                              22
+ 2017                     328                      33                   31                  31                      52                     28                              28
+ 2018                     343                      34                   30                  30                      58                     33                              30
+ 2019                     259                      33                   23                  23                      57                     32                              23
+ 2020                     155                      28                   25                  25                      14                     11                              11
+ 2021                     224                      30                   21                  21                      37                     21                              19
+ 2022                     200                      29                   18                  18                      37                     21                              17
+ 2023                     121                      26                   18                  18                      26                     16                              13
+ 2024                       0                       0                    0                   0                       0                      0                               0
+ 2025                       0                       0                    0                   0                       0                      0                               0
+
+POST-2021 RAW SUPPORT
+---------------------
+Observation-level 2022-2025 rows present: True
+
+HARD QA FLAGS
+-------------
+None
+
+FIREWALL
+--------
+Groundwater values read: True
+Sentinel-1 values read: False
+Irrigation-flow values read: False
+Hydrological association model fitted: False
+
+STAGE 53A STATUS: PASS_RAW_SOURCE_SUPPORTS_POST2021

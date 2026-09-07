@@ -1,0 +1,3 @@
+station,nearest_s1_support_distance_m,support_points_10km_n,lost_primary_well_years_n,lost_years,all_lost_rows_have_valid_groundwater,all_lost_rows_have_20km_sensitivity,classification,primary_action,20km_action
+PO0181220U0001,16697.50202388773,0,3,2016;2017;2019,True,True,DOCUMENTED_STRUCTURAL_SPATIAL_NONOVERLAP,mechanically ineligible at frozen 10-km radius; no substitution,retain only as prespecified sensitivity; never rescue primary
+PO0181550U0001,11846.143274684866,0,7,2015;2016;2017;2018;2019;2020;2021,True,True,DOCUMENTED_STRUCTURAL_SPATIAL_NONOVERLAP,mechanically ineligible at frozen 10-km radius; no substitution,retain only as prespecified sensitivity; never rescue primary

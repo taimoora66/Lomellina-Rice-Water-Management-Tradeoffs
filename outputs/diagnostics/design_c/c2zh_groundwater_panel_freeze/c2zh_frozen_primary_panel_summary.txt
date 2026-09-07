@@ -1,0 +1,55 @@
+DESIGN C - STAGE 53C FROZEN GROUNDWATER-S1 PRIMARY PANEL
+==============================================================================
+
+DOCUMENTED STRUCTURAL 10-KM NON-OVERLAP
+---------------------------------------
+PO0181220U0001:
+  nearest S1 support = 16697.502 m
+  10-km support points = 0
+  mechanically lost years = 2016;2017;2019
+  lost well-years = 3
+PO0181550U0001:
+  nearest S1 support = 11846.143 m
+  10-km support points = 0
+  mechanically lost years = 2015;2016;2017;2018;2019;2020;2021
+  lost well-years = 7
+
+PRIMARY PANEL
+-------------
+Temporally eligible groundwater well-years: 203
+Structural 10-km non-overlap well-years: 10
+Frozen primary well-years: 193
+Frozen primary wells: 32
+Wells with >=2 primary years: 32
+Years: [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
+
+POST-2021 PRIMARY RETENTION
+---------------------------
+2022: 17 / 17 retained
+2023: 13 / 13 retained
+2024: 15 / 15 retained
+2025: 17 / 17 retained
+
+RULE
+----
+The 10-km radius remains unchanged.
+The two zero-support wells are not outcome-selected exclusions.
+Their affected station-years are mechanically ineligible because the
+frozen primary exposure does not exist at the frozen 10-km radius.
+20-km exposure remains sensitivity-only and does not replace primary.
+
+HARD QA FLAGS
+-------------
+None
+
+FIREWALL
+--------
+Groundwater values read: True
+Frozen Sentinel-1 exposure read: True
+Irrigation-flow values read: False
+Hydrological association model fitted: False
+Groundwater-driven station exclusion: False
+Groundwater-driven radius selection: False
+20-km rescue of primary exposure: False
+
+STAGE 53C STATUS: PASS_PRIMARY_PANEL_FROZEN_WITH_DOCUMENTED_STRUCTURAL_NONOVERLAP

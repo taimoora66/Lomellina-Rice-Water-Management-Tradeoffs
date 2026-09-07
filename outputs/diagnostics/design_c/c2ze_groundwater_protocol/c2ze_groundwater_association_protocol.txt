@@ -1,0 +1,52 @@
+DESIGN C - STAGE 52 FROZEN GROUNDWATER ASSOCIATION PROTOCOL
+================================================================================
+
+PRIMARY QUESTION
+----------------
+Among shallow ISS groundwater wells with temporally eligible observations, is within-well interannual variation in the frozen Sentinel-1 flooding-like exposure associated with late-season groundwater depth after accounting for antecedent groundwater state, persistent well differences, and calendar-year conditions common to all wells?
+
+POPULATION
+----------
+ISS shallow-groundwater wells only.
+Pre-existing S1-era exclusions:
+  PO0180930U0006
+  PO0181870U0001
+
+FROZEN SENTINEL-1 EXPOSURE
+--------------------------
+Support-year source: flooding_like_s1_primary
+Primary well exposure: unweighted median within 10 km.
+Prespecified spatial sensitivities: 5 km and 20 km.
+Complete-4-track 10-km sensitivity retained.
+
+GROUNDWATER TEMPORAL RULE
+-------------------------
+Outcome: median valid groundwater depth during August.
+Antecedent state: last valid groundwater depth during January-February.
+Eligible well-year requires both values.
+
+PRIMARY MODEL
+-------------
+gw_aug_m ~ s1_flooding_like_10km + gw_pre_last_janfeb_m + C(station) + C(year)
+
+SIGN INTERPRETATION
+-------------------
+beta < 0: more flooding-like S1 signal associated with shallower groundwater.
+beta > 0: more flooding-like S1 signal associated with deeper groundwater.
+Association only; no causal flooding/recharge interpretation.
+
+INFERENCE
+---------
+Primary covariance: cluster-robust by station.
+Robustness: wild cluster bootstrap-t, Webb weights, 9,999 reps, seed 52026.
+
+FIREWALL
+--------
+Groundwater values read: False
+Irrigation-flow values read: False
+Groundwater model fitted: False
+S1 feature/track/orientation redesign from groundwater: False
+Spatial-radius redesign from groundwater: False
+Temporal-window redesign from groundwater: False
+
+STAGE 52 STATUS: PROTOCOL_FROZEN_GROUNDWATER_VALUES_UNREAD

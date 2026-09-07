@@ -1,0 +1,20 @@
+{
+  "stage": "DESIGN_C_STAGE53A_GROUNDWATER_SOURCE_PREFLIGHT",
+  "generated_utc": "2026-09-07T20:44:48.520718+00:00",
+  "status": "PASS_RAW_SOURCE_SUPPORTS_POST2021",
+  "source": "data\\processed\\publication_groundwater\\groundwater_clean.csv",
+  "metadata_source": "data\\processed\\publication_groundwater\\groundwater_station_metadata.csv",
+  "raw_all_valid_date_min": "2008-01-07",
+  "raw_all_valid_date_max": "2023-12-28",
+  "iss_valid_date_min": "2008-01-07",
+  "iss_valid_date_max": "2023-12-28",
+  "iss_stations_after_frozen_exclusions_n": 35,
+  "temporally_eligible_station_years_2015_2025_n": 171,
+  "post2021_observation_rows_present": true,
+  "hard_flags": [],
+  "groundwater_values_read": true,
+  "groundwater_values_role": "source coverage and temporal eligibility preflight only",
+  "sentinel1_values_read": false,
+  "irrigation_flow_values_read": false,
+  "hydrological_association_model_fitted": false
+}

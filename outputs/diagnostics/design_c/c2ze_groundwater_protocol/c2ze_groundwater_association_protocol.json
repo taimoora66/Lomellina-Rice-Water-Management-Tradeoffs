@@ -1,0 +1,156 @@
+{
+  "stage": "DESIGN_C_STAGE52_FREEZE_GROUNDWATER_ASSOCIATION_PROTOCOL",
+  "generated_utc": "2026-09-07T20:35:24.234077+00:00",
+  "status": "PROTOCOL_FROZEN_GROUNDWATER_VALUES_UNREAD",
+  "upstream_s1_freeze": {
+    "stage51_manifest": "outputs\\diagnostics\\design_c\\c2zd_exposure_freeze\\c2zd_frozen_s1_exposure_manifest.json",
+    "stage51_manifest_sha256": "28a4c27d285318bb82a979010cc79ef3731cb6d396c091fc3e8d6a3e75db1966",
+    "primary_support_year_exposure_column": "flooding_like_s1_primary",
+    "complete4_sensitivity_column": "flooding_like_s1_complete4"
+  },
+  "scientific_question": "Among shallow ISS groundwater wells with temporally eligible observations, is within-well interannual variation in the frozen Sentinel-1 flooding-like exposure associated with late-season groundwater depth after accounting for antecedent groundwater state, persistent well differences, and calendar-year conditions common to all wells?",
+  "population": {
+    "monitoring_class": "ISS",
+    "interpretation": "shallow groundwater monitoring wells",
+    "outcome_blind_preexisting_exclusions": [
+      {
+        "station": "PO0180930U0006",
+        "reason": "only observation dated 2013-08-20; outside S1 era"
+      },
+      {
+        "station": "PO0181870U0001",
+        "reason": "observations only 2010-2013; outside S1 era"
+      }
+    ],
+    "additional_outcome_based_station_exclusion_allowed": false
+  },
+  "analysis_year_rule": {
+    "sentinel1_available_years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "groundwater_years": "mechanical intersection with well-years satisfying the frozen August-outcome and Jan-Feb-antecedent temporal rules",
+    "association_result_based_year_exclusion_allowed": false
+  },
+  "groundwater_temporal_definition": {
+    "outcome_variable_name": "gw_aug_m",
+    "outcome_window": "August 1 through August 31",
+    "outcome_aggregation": "median of all valid groundwater-depth observations",
+    "antecedent_variable_name": "gw_pre_last_janfeb_m",
+    "antecedent_window": "January 1 through February 28/29",
+    "antecedent_aggregation": "last valid observation in chronological order",
+    "eligible_well_year_requires": [
+      "at least one valid August groundwater-depth observation",
+      "at least one valid January-February groundwater-depth observation",
+      "valid frozen Sentinel-1 spatial exposure at the required scale"
+    ],
+    "value_imputation": false
+  },
+  "s1_spatial_linkage": {
+    "distance_crs": "EPSG:32632",
+    "primary_radius_m": 10000,
+    "primary_aggregation": "unweighted median",
+    "primary_column_name": "s1_flooding_like_10km",
+    "support_exposure_source": "flooding_like_s1_primary",
+    "prespecified_sensitivity_radii_m": [
+      5000,
+      20000
+    ],
+    "sensitivity_column_names": [
+      "s1_flooding_like_5km",
+      "s1_flooding_like_20km"
+    ],
+    "complete4_sensitivity": {
+      "radius_m": 10000,
+      "support_exposure_source": "flooding_like_s1_complete4",
+      "aggregation": "unweighted median",
+      "column_name": "s1_flooding_like_complete4_10km"
+    },
+    "distance_weighting": false,
+    "groundwater_performance_weighting": false,
+    "minimum_support_points": 1,
+    "note": "Primary 10-km radius is inherited from the established RiceFloodIT-compatible groundwater exposure architecture and is not selected from Design-C groundwater outcomes."
+  },
+  "primary_model": {
+    "formula": "gw_aug_m ~ s1_flooding_like_10km + gw_pre_last_janfeb_m + C(station) + C(year)",
+    "primary_coefficient": "s1_flooding_like_10km",
+    "station_fixed_effects": true,
+    "year_fixed_effects": true,
+    "antecedent_groundwater_adjustment": true,
+    "causal_interpretation_allowed": false
+  },
+  "coefficient_interpretation": {
+    "groundwater_depth_direction": "larger groundwater-depth values mean deeper groundwater",
+    "s1_exposure_direction": "larger values mean more RiceFloodIT-consistent flooding-like signal",
+    "negative_beta": "more flooding-like S1 signal associated with shallower late-season groundwater",
+    "positive_beta": "more flooding-like S1 signal associated with deeper late-season groundwater",
+    "zero_beta": "no estimated linear partial association on the frozen exposure scale"
+  },
+  "inference": {
+    "primary_covariance": "cluster-robust covariance clustered by station/well",
+    "wild_cluster_bootstrap_t": {
+      "enabled": true,
+      "cluster": "station",
+      "weights": "Webb",
+      "replications": 9999,
+      "seed": 52026,
+      "role": "prespecified robustness inference"
+    },
+    "p_value_driven_redesign_allowed": false
+  },
+  "prespecified_sensitivity_analyses": [
+    {
+      "name": "5km_spatial_scale",
+      "formula": "gw_aug_m ~ s1_flooding_like_5km + gw_pre_last_janfeb_m + C(station) + C(year)"
+    },
+    {
+      "name": "20km_spatial_scale",
+      "formula": "gw_aug_m ~ s1_flooding_like_20km + gw_pre_last_janfeb_m + C(station) + C(year)"
+    },
+    {
+      "name": "complete4_track_support",
+      "formula": "gw_aug_m ~ s1_flooding_like_complete4_10km + gw_pre_last_janfeb_m + C(station) + C(year)"
+    },
+    {
+      "name": "without_antecedent_groundwater",
+      "formula": "gw_aug_m ~ s1_flooding_like_10km + C(station) + C(year)"
+    },
+    {
+      "name": "leave_one_well_out",
+      "role": "coefficient influence diagnostic only; never a basis for excluding a well from the primary analysis"
+    }
+  ],
+  "reporting_requirements": [
+    "report exact N well-years and number of wells",
+    "report years represented",
+    "report primary beta with sign interpretation",
+    "report cluster-robust uncertainty",
+    "report wild-cluster-bootstrap result",
+    "report within-well identifying variation of S1 exposure",
+    "report sensitivity-scale coefficients",
+    "report complete-4-track sensitivity",
+    "report leave-one-well-out coefficient range",
+    "state explicitly that the analysis is observational and non-causal"
+  ],
+  "firewall": {
+    "groundwater_values_read": false,
+    "irrigation_flow_values_read": false,
+    "groundwater_model_fitted": false,
+    "irrigation_model_fitted": false,
+    "sentinel1_feature_reselection_allowed": false,
+    "sentinel1_orientation_reselection_allowed": false,
+    "sentinel1_track_weight_reselection_allowed": false,
+    "spatial_radius_reselection_from_groundwater_allowed": false,
+    "temporal_window_reselection_from_groundwater_allowed": false,
+    "station_exclusion_from_association_result_allowed": false
+  }
+}

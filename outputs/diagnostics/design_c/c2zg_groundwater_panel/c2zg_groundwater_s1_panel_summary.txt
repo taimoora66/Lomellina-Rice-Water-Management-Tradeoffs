@@ -1,0 +1,66 @@
+DESIGN C - STAGE 53B-v2 COMPLETE 2015-2025 GROUNDWATER-S1 PANEL
+==================================================================================
+
+GROUNDWATER UNIVERSE
+--------------------
+All metadata stations: 68
+Historical ISS wells: 37
+Frozen S1-era exclusions: 2
+Candidate ISS wells after exclusions: 35
+
+AUTHORITATIVE OBSERVATION SOURCES
+---------------------------------
+2015-2023: publication_groundwater/groundwater_clean.csv
+2024: data\raw\arpa\groundwater_pavia_2024\pavia_groundwater_quantitative_2024_update_2025-10-14.xlsx
+2025: data\raw\arpa\groundwater_2025\lombardia_groundwater_quantitative_2025.xlsx
+
+STAGE-14 EXTENSION REPRODUCTION
+-------------------------------
+Reproduction checks: 18
+Reproduction failures: 0
+
+FROZEN POST-2021 TEMPORAL ELIGIBILITY
+-------------------------------------
+2022: observed 17 / frozen expected 17
+2023: observed 13 / frozen expected 13
+2024: observed 15 / frozen expected 15
+2025: observed 17 / frozen expected 17
+
+FINAL PANEL
+-----------
+Temporally eligible groundwater well-years: 203
+Primary complete groundwater-S1 well-years: 193
+Primary wells: 32
+Primary wells with >=2 years: 32
+Primary years represented: [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
+
+YEAR COVERAGE
+-------------
+ year  temporally_eligible_well_years_n  primary_complete_well_years_n  stations_n  s1_5km_available_n  s1_10km_available_n  s1_20km_available_n  s1_complete4_10km_available_n
+ 2015                                 8                              7           8                   6                    7                    8                              5
+ 2016                                22                             20          22                  19                   20                   22                             17
+ 2017                                28                             26          28                  24                   26                   28                             21
+ 2018                                30                             29          30                  27                   29                   30                             23
+ 2019                                23                             21          23                  20                   21                   23                             21
+ 2020                                11                             10          11                  10                   10                   11                             10
+ 2021                                19                             18          19                  18                   18                   19                             14
+ 2022                                17                             17          17                  17                   17                   17                             13
+ 2023                                13                             13          13                  13                   13                   13                              9
+ 2024                                15                             15          15                  15                   15                   15                             11
+ 2025                                17                             17          17                  17                   17                   17                             13
+
+HARD QA FLAGS
+-------------
+ONE_OR_MORE_WELLS_HAVE_ZERO_10KM_S1_SUPPORT
+
+FIREWALL
+--------
+Groundwater values read: True
+Frozen Sentinel-1 exposure read: True
+Irrigation-flow values read: False
+Hydrological association model fitted: False
+Groundwater-driven station exclusion: False
+Groundwater-driven radius selection: False
+Groundwater-driven S1 feature selection: False
+
+STAGE 53B-v2 STATUS: FAIL_REVIEW_REQUIRED
