@@ -1,0 +1,52 @@
+{
+  "alternate_controls_examined_in_this_stage": false,
+  "alternate_outcome_examined_in_this_stage": false,
+  "alternate_radius_examined_in_this_stage": false,
+  "causal_interpretation_allowed": false,
+  "design_matrix": {
+    "columns": 44,
+    "full_rank": true,
+    "rank": 44
+  },
+  "generated_utc": "2026-09-07T21:38:59.922319+00:00",
+  "inference": {
+    "bootstrap": "WCR31 Webb null-imposed",
+    "bootstrap_B": 9999,
+    "bootstrap_seed": 52026,
+    "df": 31,
+    "df_correction": true,
+    "primary": "CRV1 cluster-robust by station",
+    "use_correction": true
+  },
+  "model_search_performed": false,
+  "panel": {
+    "duplicate_station_years": 0,
+    "n": 193,
+    "wells": 32,
+    "years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  "sha256": {
+    "frozen_primary_panel": "99983f7d397e4b8252b3ec4557ce05d54f9b4b4c3575c7c460592f20c02b7d60",
+    "primary_result": "083e9013bb36d4fd9e6470dd84645dbaafcb0cdb1323904684b4ee659e97e426",
+    "stage52_protocol": "20a01bd6ae81c7ccae32514075732d2a0ab39cedf3b2eead3767c2e261a16dd6",
+    "stage53c_manifest": "986a0c240733d0e0f03b8cb89b1e96b0d0f968ea093c1d847c5e32fc346ff924",
+    "stage54_audit": "2e3d200858920081f85baec321926eb5a449135fc2f594e36d5dd87892bf5edb",
+    "stage55_inference_freeze": "8a38c30a36a5b0f802fccb28840aa1425c83d9a33302a2c109edce714890c970",
+    "stage55_smoke_test": "e435db025de180e59dc23704f4011d8ac4944cf1318a96887f82121efd82b472"
+  },
+  "stage": "DESIGN_C_STAGE56_PRIMARY_ASSOCIATION_REVEAL",
+  "station_exclusion_based_on_result": false,
+  "status": "PASS_PRIMARY_ASSOCIATION_REVEALED_NO_MODEL_SEARCH"
+}

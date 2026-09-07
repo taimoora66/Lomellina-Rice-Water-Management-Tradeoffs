@@ -1,0 +1,41 @@
+DESIGN C - STAGE 56 CONTROLLED PRIMARY ASSOCIATION REVEAL
+============================================================================
+
+FROZEN MODEL
+------------
+gw_aug_m ~ s1_flooding_like_10km + gw_pre_last_janfeb_m + C(station) + C(year)
+
+SAMPLE
+------
+N well-years: 193
+Wells: 32
+Years: 2015-2025
+Design rank: 44/44
+
+PRIMARY ASSOCIATION
+-------------------
+beta_hat: -0.306709156575
+CRV1 SE: 0.226050675169
+CRV1 t(31): -1.35681592787
+CRV1 two-sided p: 0.184638347665
+CRV1 95% CI: [-0.76774254815, 0.154324234999]
+WCR31-Webb two-sided p: 0.494149414941
+
+SIGN INTERPRETATION
+-------------------
+more flooding-like S1 signal associated with shallower late-season groundwater
+
+SCIENTIFIC INTERPRETATION
+-------------------------
+Observational partial association only.
+No causal interpretation is permitted.
+
+FIREWALL / SEARCH AUDIT
+-----------------------
+Model search performed: False
+Alternate radius examined in Stage 56: False
+Alternate outcome examined in Stage 56: False
+Alternate controls examined in Stage 56: False
+Result-driven station exclusion: False
+
+STAGE 56 STATUS: PASS_PRIMARY_ASSOCIATION_REVEALED_NO_MODEL_SEARCH
