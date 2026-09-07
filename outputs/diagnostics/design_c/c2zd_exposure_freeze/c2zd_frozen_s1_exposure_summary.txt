@@ -1,0 +1,30 @@
+DESIGN C - STAGE 51 FINAL SENTINEL-1 EXPOSURE FREEZE
+============================================================================
+
+Source feature: vv_p10_db
+Frozen primary exposure column: flooding_like_s1_primary
+
+Support-year rows: 47641 / expected 47641
+Primary eligible rows: 47641
+Complete-4-track sensitivity rows: 16387
+Independent recompute cases: 77
+Independent recompute failures: 0
+
+HARD QA FLAGS
+-------------
+None
+
+FIREWALL
+--------
+Raw RiceFloodIT values read: False
+Groundwater read: False
+Irrigation-flow read: False
+Hydrological association model fitted: False
+
+DOWNSTREAM RULE
+---------------
+Only flooding_like_s1_primary is permitted as the primary Sentinel-1
+exposure in the confirmatory hydrological path.
+No groundwater-driven re-selection of feature/track/weighting is allowed.
+
+STAGE 51 STATUS: PASS_FINAL_S1_EXPOSURE_FROZEN_FOR_HYDROLOGICAL_ANALYSIS

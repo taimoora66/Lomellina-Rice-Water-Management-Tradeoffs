@@ -1,0 +1,67 @@
+{
+  "stage": "DESIGN_C_STAGE49_FREEZE_CROSS_TRACK_REPRESENTATION_PROTOCOL",
+  "generated_utc": "2026-09-07T20:23:39.877943+00:00",
+  "status": "PROTOCOL_FROZEN_NO_HYDROLOGICAL_OUTCOME_READ",
+  "source_feature": "vv_p10_db",
+  "source_feature_status": "Stage-48 construct-valid primary feature",
+  "frozen_ricefloodit_construct_direction": "negative",
+  "track_standardization": {
+    "performed_separately_by": [
+      "orbit_state",
+      "relative_orbit"
+    ],
+    "reference_archive_years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "center": "track-specific median across all finite support-year values",
+    "scale": "1.4826 * track-specific MAD across all finite support-year values",
+    "formula": "(x - track_median) / (1.4826 * track_MAD)",
+    "year_specific_standardization": false,
+    "reason": "Full-archive track-specific robust standardization removes geometry-scale offsets while retaining common interannual shifts."
+  },
+  "construct_orientation": {
+    "orientation_multiplier": -1,
+    "formula": "flooding_like_z = orientation_multiplier * robust_z",
+    "interpretation": "larger composite values mean more RiceFloodIT-consistent flooding-like signal",
+    "orientation_uses_validation_direction_only": true,
+    "orientation_does_not_use_validation_magnitude": true
+  },
+  "cross_track_aggregation": {
+    "method": "unweighted median",
+    "weights": "none",
+    "primary_minimum_available_tracks": 3,
+    "maximum_tracks": 4,
+    "complete_four_track_subset_retained": true,
+    "no_best_track_selection": true,
+    "no_ricefloodit_performance_weighting": true,
+    "no_bootstrap_precision_weighting": true,
+    "no_groundwater_performance_weighting": true,
+    "no_irrigation_flow_performance_weighting": true
+  },
+  "missingness_policy": {
+    "track_specific_missing_values": "remain missing",
+    "imputation": false,
+    "nearest_track_substitution": false,
+    "primary_support_year_requires_at_least_3_tracks": true,
+    "rows_with_fewer_than_3_tracks": "retained in QA but excluded from primary composite eligibility"
+  },
+  "downstream_role": "predeclared Sentinel-1 flooding-like exposure for later hydrological association analysis; not a causal treatment and not a direct measure of recharge",
+  "firewall": {
+    "groundwater_values_read": false,
+    "irrigation_flow_values_read": false,
+    "groundwater_association_model_fitted": false,
+    "irrigation_association_model_fitted": false,
+    "representation_tuned_to_groundwater": false,
+    "representation_tuned_to_irrigation_flow": false
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "stage": "DESIGN_C_STAGE51_AUDIT_AND_FREEZE_FINAL_S1_EXPOSURE",
+  "generated_utc": "2026-09-07T20:31:08.082898+00:00",
+  "status": "PASS_FINAL_S1_EXPOSURE_FROZEN_FOR_HYDROLOGICAL_ANALYSIS",
+  "frozen_measurement": {
+    "source_feature": "vv_p10_db",
+    "orientation_multiplier": -1,
+    "support_year_exposure_column": "flooding_like_s1_primary",
+    "primary_minimum_available_tracks": 3,
+    "complete4_sensitivity_column": "flooding_like_s1_complete4"
+  },
+  "universe": {
+    "support_ids_n": 4331,
+    "years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "support_year_rows_n": 47641,
+    "primary_eligible_rows_n": 47641,
+    "complete4_rows_n": 16387
+  },
+  "independent_recompute": {
+    "support_ids": [
+      "RFIT_0001",
+      "RFIT_0723",
+      "RFIT_1444",
+      "RFIT_2166",
+      "RFIT_2888",
+      "RFIT_3609",
+      "RFIT_4331"
+    ],
+    "cases_n": 77,
+    "failures_n": 0
+  },
+  "sha256": {
+    "phenology_input": "348a254ac7b2ec007d0997afa96591a6c3585231f186dae105c76e7a6327c400",
+    "stage49_protocol": "b2ccd6ea62a1eff93fdf38b170b8ecff99df35820cc4747313aab314be45d9c4",
+    "stage50_standardization_parameters": "ba808454df70c0afcf802281325754ac945bd81b4e317d49454d6a72f54ea7e1",
+    "stage50_support_year_exposure": "29b50d1e50454bda07eb559499ee9978605dcc6359aa8cdefdb07aaa89617f4b"
+  },
+  "hard_flags": [],
+  "groundwater_values_read": false,
+  "irrigation_flow_values_read": false,
+  "raw_ricefloodit_values_read": false,
+  "hydrological_association_models_fitted": 0,
+  "downstream_permission": "The frozen column flooding_like_s1_primary may now be linked to groundwater under a separately frozen hydrological-analysis protocol. No alternative Sentinel-1 feature, orientation, standardization, track weighting, or aggregation rule may be selected from groundwater performance in the confirmatory path."
+}

@@ -1,0 +1,41 @@
+DESIGN C - STAGE 50 FROZEN CROSS-TRACK SENTINEL-1 EXPOSURE
+================================================================================
+
+Source feature: vv_p10_db
+Orientation multiplier: -1
+Track standardization: full-archive track-specific median / 1.4826×MAD
+Cross-track aggregation: unweighted median
+
+Track-year rows: 190564 / expected 190564
+Support-year rows: 47641 / expected 47641
+Primary eligible (>=3 tracks): 47641
+Complete 4-track subset: 16387
+
+YEAR COVERAGE
+-------------
+ year  support_rows_n  zero_track_rows_n  one_track_rows_n  two_track_rows_n  three_track_rows_n  four_track_rows_n  primary_eligible_rows_n  complete4_rows_n  primary_exposure_median  primary_exposure_p10  primary_exposure_p90  primary_eligible_fraction  complete4_fraction
+ 2015            4331                  0                 0                 0                2703               1628                     4331              1628                -0.599030             -1.432776              0.334294                        1.0            0.375895
+ 2016            4331                  0                 0                 0                2824               1507                     4331              1507                 0.049858             -0.793874              1.166798                        1.0            0.347957
+ 2017            4331                  0                 0                 0                2826               1505                     4331              1505                 0.229129             -0.542269              1.203732                        1.0            0.347495
+ 2018            4331                  0                 0                 0                2838               1493                     4331              1493                -0.142310             -0.945759              0.925535                        1.0            0.344724
+ 2019            4331                  0                 0                 0                2818               1513                     4331              1513                -0.127809             -0.911043              0.950806                        1.0            0.349342
+ 2020            4331                  0                 0                 0                2865               1466                     4331              1466                -0.047163             -0.807768              0.909967                        1.0            0.338490
+ 2021            4331                  0                 0                 0                2876               1455                     4331              1455                 0.318135             -0.542308              1.223649                        1.0            0.335950
+ 2022            4331                  0                 0                 0                2884               1447                     4331              1447                 0.381848             -0.692123              1.443048                        1.0            0.334103
+ 2023            4331                  0                 0                 0                2886               1445                     4331              1445                 0.045262             -0.929979              1.146611                        1.0            0.333641
+ 2024            4331                  0                 0                 0                2868               1463                     4331              1463                -0.309570             -1.232248              0.770561                        1.0            0.337797
+ 2025            4331                  0                 0                 0                2866               1465                     4331              1465                 0.039552             -0.764311              0.969629                        1.0            0.338259
+
+HARD QA FLAGS
+-------------
+None
+
+FIREWALL
+--------
+Raw RiceFloodIT values read: False
+Groundwater read: False
+Irrigation-flow read: False
+Hydrological association model fitted: False
+Representation tuned to hydrological outcomes: False
+
+STAGE 50 STATUS: PASS_FROZEN_CROSS_TRACK_EXPOSURE_CONSTRUCTED

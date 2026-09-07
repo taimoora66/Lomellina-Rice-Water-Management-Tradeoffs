@@ -1,0 +1,35 @@
+DESIGN C - STAGE 49 FROZEN CROSS-TRACK REPRESENTATION PROTOCOL
+==============================================================================
+
+Construct-valid source feature: vv_p10_db
+Frozen RiceFloodIT construct direction: negative
+Orientation multiplier: -1
+
+TRACK STANDARDIZATION
+---------------------
+Robust-standardize separately within each track over the full 2015-2025 archive.
+Center = track median.
+Scale = 1.4826 × track MAD.
+Do NOT standardize separately by year.
+
+CROSS-TRACK AGGREGATION
+-----------------------
+Unweighted median of oriented standardized track values.
+Primary eligibility: at least 3 of 4 tracks.
+Exactly-4-track rows retained as a prespecified sensitivity subset.
+No track-performance weighting.
+
+WHY NOT YEAR-WISE STANDARDIZATION?
+----------------------------------
+Year-wise standardization would remove common interannual shifts.
+The full-archive track-specific rule preserves temporal information.
+
+FIREWALL
+--------
+Groundwater read: False
+Irrigation-flow read: False
+Groundwater association model fitted: False
+Irrigation association model fitted: False
+Representation tuned to hydrological outcomes: False
+
+STAGE 49 STATUS: PROTOCOL_FROZEN_NO_HYDROLOGICAL_OUTCOME_READ
