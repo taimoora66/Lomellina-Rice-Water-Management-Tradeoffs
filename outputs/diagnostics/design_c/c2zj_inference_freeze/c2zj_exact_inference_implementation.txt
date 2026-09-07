@@ -1,0 +1,37 @@
+DESIGN C - STAGE 55 EXACT INFERENCE IMPLEMENTATION FREEZE
+========================================================================
+
+PRIMARY CLUSTER-ROBUST INFERENCE
+--------------------------------
+cov_type="cluster"
+groups=station
+use_correction=True
+df_correction=True
+reference df = G - 1
+
+WILD CLUSTER BOOTSTRAP
+----------------------
+type=WCR31
+weights=webb
+impose_null=True
+B=9999
+seed=52026
+parallel=False
+wildboottest version=0.3.2
+
+SYNTHETIC SMOKE TEST
+--------------------
+rows=193
+clusters=32
+design rank=44/44
+WCR31 p run 1=0
+WCR31 p run 2=0
+fixed-seed reproducible=True
+
+FIREWALL
+--------
+Real Design-C groundwater-S1 panel read: False
+Association coefficient fitted: False
+Association coefficient reported: False
+
+STAGE 55 STATUS: INFERENCE_IMPLEMENTATION_FROZEN_NO_REAL_ASSOCIATION_FIT

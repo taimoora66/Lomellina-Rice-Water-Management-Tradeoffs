@@ -1,0 +1,31 @@
+{
+  "clusters": 32,
+  "design_columns": 44,
+  "design_rank": 44,
+  "fixed_seed_exactly_reproducible": true,
+  "n": 193,
+  "real_association_coefficient": "NOT_FITTED_NOT_REVEALED",
+  "scientific_interpretation": "NONE_SYNTHETIC_SMOKE_TEST_ONLY",
+  "status": "PASS_SYNTHETIC_ONLY",
+  "synthetic_crv1_ci": [
+    0.26166276519993437,
+    0.5302096492940802
+  ],
+  "synthetic_crv1_p": 1.1792623635545711e-06,
+  "synthetic_crv1_se": 0.06583601705804835,
+  "synthetic_wcr31_p_run1": 0.0,
+  "synthetic_wcr31_p_run2": 0.0,
+  "years": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ]
+}
