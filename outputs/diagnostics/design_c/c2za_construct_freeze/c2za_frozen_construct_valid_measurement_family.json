@@ -1,0 +1,18 @@
+{
+  "stage": "DESIGN_C_STAGE48_AUDIT_AND_FREEZE_RICEFLOODIT_CONSTRUCT_VALIDATION",
+  "generated_utc": "2026-09-07T20:19:00.942659+00:00",
+  "status": "PASS_CONSTRUCT_VALID_MEASUREMENT_FAMILY_FROZEN",
+  "construct_valid_primary_features": [
+    "vv_p10_db"
+  ],
+  "selection_basis": "predeclared Stage-46 construct-consistency screen; not maximum observed correlation",
+  "track_specific_values_retained": true,
+  "cross_track_pooling_rule_selected": false,
+  "cross_track_standardization_rule_selected": false,
+  "groundwater_values_read": false,
+  "irrigation_flow_values_read": false,
+  "inundation_threshold_selected": false,
+  "classifier_fitted": false,
+  "groundwater_association_models_fitted": 0,
+  "hard_flags": []
+}

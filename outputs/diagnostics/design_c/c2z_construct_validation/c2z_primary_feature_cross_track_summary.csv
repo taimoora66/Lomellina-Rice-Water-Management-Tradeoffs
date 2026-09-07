@@ -1,0 +1,7 @@
+feature,tracks_passing_within_track_screen_n,positive_passing_tracks_n,negative_passing_tracks_n,cross_track_majority_direction,consistent_direction_tracks_n,construct_consistency_pass
+early_season_vh_median_db,2,0,2,negative,2,False
+early_season_vv_median_db,1,0,1,negative,1,False
+early_season_vv_minus_vh_median_db,0,0,0,tie_or_none,0,False
+vh_p10_db,2,0,2,negative,2,False
+vv_minus_vh_p10_db,0,0,0,tie_or_none,0,False
+vv_p10_db,3,0,3,negative,3,True

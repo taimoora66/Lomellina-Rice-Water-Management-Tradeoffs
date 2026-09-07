@@ -1,0 +1,39 @@
+{
+  "stage": "DESIGN_C_STAGE47_EXECUTE_FROZEN_RICEFLOODIT_CONSTRUCT_VALIDATION",
+  "generated_utc": "2026-09-07T20:12:11.532791+00:00",
+  "status": "PASS_VALIDATION_EXECUTED",
+  "validation_years": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021
+  ],
+  "primary_features": [
+    "vv_p10_db",
+    "vh_p10_db",
+    "vv_minus_vh_p10_db",
+    "early_season_vv_median_db",
+    "early_season_vh_median_db",
+    "early_season_vv_minus_vh_median_db"
+  ],
+  "primary_year_track_feature_cells_n": 168,
+  "expected_primary_cells_n": 168,
+  "primary_features_passing_frozen_construct_consistency_screen": [
+    "vv_p10_db"
+  ],
+  "hard_flags": [],
+  "decision_interpretation": "Passing features are retained as a construct-valid family. No single best feature is selected by maximum RiceFloodIT correlation. If none pass, this frozen confirmatory path records failure/inconclusiveness rather than tuning a new feature.",
+  "ricefloodit_flood_values_read": true,
+  "ricefloodit_role": "external_construct_validation_only",
+  "groundwater_values_read": false,
+  "irrigation_flow_values_read": false,
+  "inundation_threshold_selected": false,
+  "classifier_fitted": false,
+  "feature_redesign_after_ricefloodit_performance": false,
+  "groundwater_association_models_fitted": 0,
+  "irrigation_association_models_fitted": 0,
+  "nominal_p_values_used_for_selection": false
+}

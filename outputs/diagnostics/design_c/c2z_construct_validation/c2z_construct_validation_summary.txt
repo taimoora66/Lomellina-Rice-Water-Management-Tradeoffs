@@ -1,0 +1,34 @@
+DESIGN C - STAGE 47 FROZEN RICEFLOODIT CONSTRUCT VALIDATION
+==============================================================================
+
+Observed validation years: 2015-2021
+Primary features: 6
+Primary year-track-feature cells: 168 / expected 168
+
+RICEFLOODIT LINKAGE
+-------------------
+Minimum year-track FF link fraction: 0.7719
+Median year-track FF link fraction: 0.8393
+Maximum year-track FF link fraction: 0.8725
+
+FROZEN CONSTRUCT-CONSISTENCY RESULT
+-----------------------------------
+Primary features passing: ['vv_p10_db']
+
+HARD QA FLAGS
+-------------
+None
+
+FIREWALL
+--------
+RiceFloodIT flood values read: True
+RiceFloodIT role: external construct validation only
+Groundwater read: False
+Irrigation-flow read: False
+Threshold selected: False
+Classifier fitted: False
+Feature redesign from RiceFloodIT performance: False
+Groundwater association model fitted: False
+Irrigation association model fitted: False
+
+STAGE 47 STATUS: PASS_VALIDATION_EXECUTED

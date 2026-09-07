@@ -156,3 +156,5 @@ outputs/diagnostics/design_c/c2pc2_sentinel2_boa_point_samples.csv
 data/design_c/raw/
 data/design_c/derived_public_archive/
 
+
+outputs/diagnostics/design_c/c2x_phenology/c2x_s1_track_year_phenology_features.csv.gz
