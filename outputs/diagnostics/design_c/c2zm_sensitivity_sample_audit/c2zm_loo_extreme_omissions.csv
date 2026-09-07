@@ -1,0 +1,4 @@
+omitted_station,remaining_n,remaining_wells,beta_hat,change_from_primary_beta,sign,role
+PO0180690U0002,189,31,-0.369156877437351,-0.0624477208618602,negative,minimum_beta
+PO0180490U0003,189,31,0.0861360681060366,0.3928452246815275,positive,maximum_beta
+PO0180490U0003,189,31,0.0861360681060366,0.3928452246815275,positive,positive_beta

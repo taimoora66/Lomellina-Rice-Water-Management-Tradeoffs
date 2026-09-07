@@ -1,0 +1,24 @@
+{
+  "generated_utc": "2026-09-07T21:48:48.113369+00:00",
+  "groundwater_outcome_used": false,
+  "loo_positive_omission_count": 1,
+  "new_association_model_fitted": false,
+  "new_radius_added": false,
+  "result_driven_exclusion": false,
+  "sample_sizes": {
+    "10km": 193,
+    "20km": 203,
+    "5km": 186,
+    "complete4_10km": 157,
+    "frozen_primary_10km": 193
+  },
+  "stage": "DESIGN_C_STAGE58_SENSITIVITY_SAMPLE_COMPOSITION_AUDIT",
+  "status": "PASS_DESCRIPTIVE_SAMPLE_AUDIT_NO_NEW_ASSOCIATION_MODEL",
+  "well_counts": {
+    "10km": 32,
+    "20km": 34,
+    "5km": 30,
+    "complete4_10km": 26,
+    "frozen_primary_10km": 32
+  }
+}

@@ -1,0 +1,47 @@
+DESIGN C - STAGE 58 SENSITIVITY SAMPLE COMPOSITION AUDIT
+==========================================================================
+
+DESCRIPTIVE ONLY
+----------------
+Groundwater outcome used: False
+New association model fitted: False
+
+SAMPLE SIZES FROM FROZEN EXPOSURE AVAILABILITY
+------------------------------------------------
+5 km: 186 well-years; 30 wells
+10 km available: 193 well-years; 32 wells
+Frozen primary 10 km: 193 well-years; 32 wells
+20 km: 203 well-years; 34 wells
+Complete-4 10 km: 157 well-years; 26 wells
+
+PAIRWISE WELL-YEAR OVERLAP
+--------------------------
+5 vs 10 km: intersection=186, 5-only=0, 10-only=7, Jaccard=0.963731
+10 vs 20 km: intersection=193, Jaccard=0.950739
+5 vs 20 km: intersection=186, Jaccard=0.916256
+
+EXPOSURE AGREEMENT ON COMMON WELL-YEARS
+---------------------------------------
+5km vs 10km: N=186, Pearson r=0.717515, Spearman rho=0.831449
+10km vs 20km: N=193, Pearson r=0.924206, Spearman rho=0.941100
+5km vs 20km: N=186, Pearson r=0.723238, Spearman rho=0.801612
+10km vs complete4_10km: N=157, Pearson r=0.929660, Spearman rho=0.936607
+
+COMPLETE-4 RESTRICTION
+----------------------
+Primary 10-km rows retained in complete-4: 157/193
+Primary 10-km rows lost under complete-4: 36
+
+LEAVE-ONE-WELL-OUT SIGN REVERSAL
+--------------------------------
+Positive LOO coefficients: 1
+omitted station=PO0180490U0003; beta=0.086136068106
+
+INTERPRETIVE LIMIT
+------------------
+This stage describes sample/exposure differences only.
+It does not attribute radius-sensitivity coefficient changes to either
+sample composition or exposure-scale transformation causally.
+No common-sample association model was fitted.
+
+STAGE 58 STATUS: PASS_DESCRIPTIVE_SAMPLE_AUDIT_NO_NEW_ASSOCIATION_MODEL
