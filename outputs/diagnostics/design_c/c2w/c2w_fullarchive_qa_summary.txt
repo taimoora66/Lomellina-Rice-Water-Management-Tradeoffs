@@ -1,0 +1,40 @@
+DESIGN C - C2W FULL-ARCHIVE SENTINEL-1 MEASUREMENT QA
+==============================================================================
+
+Checkpoint files: 2134
+Expected frozen scenes: 2134
+Years represented: [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
+Zero-study-support checkpoints: 278
+Support IDs represented: 4331
+
+VV raster-inside samples: 4702348
+VV valid corrected sigma0: 4515144
+VV non-positive corrected power: 186814
+VV non-positive rate among raster-inside: 0.03972781
+
+VH raster-inside samples: 4702348
+VH valid corrected sigma0: 4424067
+VH non-positive corrected power: 277891
+VH non-positive rate among raster-inside: 0.05909622
+
+HARD QA FLAGS
+-------------
+None
+
+DOCUMENTED SOURCE MISSINGNESS
+-----------------------------
+DOCUMENTED_NOISE_SUPPORT_MISSINGNESS_VV:390
+DOCUMENTED_NOISE_SUPPORT_MISSINGNESS_VH:390
+
+Remaining thermal-noise unsupported samples are retained as missing and are not imputed.
+The upstream original SAFE and derived COG SAFE contain byte-identical thermal-noise annotations for the affected 2025-04-21 S1C acquisition; no additional same-acquisition authoritative recovery source was available.
+
+FIREWALL
+--------
+Groundwater read: False
+Irrigation-flow read: False
+RiceFloodIT flood values read: False
+Threshold/classifier selected: False
+Association model fitted: False
+
+C2W STATUS: PASS_WITH_DOCUMENTED_SOURCE_MISSINGNESS

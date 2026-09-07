@@ -1,0 +1,89 @@
+{
+  "stage": "DESIGN_C_C2W_FULLARCHIVE_SENTINEL1_MEASUREMENT_QA",
+  "status": "PASS_WITH_DOCUMENTED_SOURCE_MISSINGNESS",
+  "checkpoint_directory": "outputs\\diagnostics\\design_c\\c2v\\scene_checkpoints\\primary",
+  "checkpoint_files_n": 2134,
+  "expected_frozen_scenes_n": 2134,
+  "frozen_plan_path": "outputs\\diagnostics\\design_c\\c2uf_primary_vvvh_canonical_asset_plan.csv",
+  "frozen_plan_scenes_n": 2134,
+  "expected_support_coordinates_n": 4331,
+  "support_ids_represented_n": 4331,
+  "years_expected": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "years_observed": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "zero_support_checkpoints_n": 278,
+  "missing_checkpoint_scenes_n": 0,
+  "missing_checkpoint_scenes": [],
+  "unexpected_checkpoint_scenes_n": 0,
+  "unexpected_checkpoint_scenes": [],
+  "archive_totals": {
+    "VV": {
+      "raster_inside_n": 4702348,
+      "valid_corrected_sigma0_n": 4515144,
+      "nonpositive_n": 186814,
+      "calibration_fail_n": 0,
+      "noise_fail_n": 390,
+      "nonpositive_rate_among_raster_inside": 0.03972781257363343
+    },
+    "VH": {
+      "raster_inside_n": 4702348,
+      "valid_corrected_sigma0_n": 4424067,
+      "nonpositive_n": 277891,
+      "calibration_fail_n": 0,
+      "noise_fail_n": 390,
+      "nonpositive_rate_among_raster_inside": 0.05909622171732079
+    }
+  },
+  "hard_flags": [],
+  "documented_source_missingness": [
+    "DOCUMENTED_NOISE_SUPPORT_MISSINGNESS_VV:390",
+    "DOCUMENTED_NOISE_SUPPORT_MISSINGNESS_VH:390"
+  ],
+  "flags": [
+    "DOCUMENTED_NOISE_SUPPORT_MISSINGNESS_VV:390",
+    "DOCUMENTED_NOISE_SUPPORT_MISSINGNESS_VH:390"
+  ],
+  "documented_noise_missingness_expected": {
+    "VV": 390,
+    "VH": 390
+  },
+  "documented_noise_missingness_scene": "S1C_IW_GRDH_1SDV_20250421T053447_20250421T053516_001987_003FE6_9043_COG",
+  "documented_noise_missingness_policy": "retain_as_missing_no_imputation",
+  "documented_noise_missingness_provenance": "Remaining cases occur after validated declared-block azimuth-LUT edge recovery. The affected 2025-04-21 S1C upstream original 9B29 SAFE and derived 9043 COG SAFE contain byte-identical VV/VH thermal-noise annotations, so no additional same-acquisition authoritative recovery source was available.",
+  "outputs": {
+    "scene_checkpoint_audit_csv": "outputs\\diagnostics\\design_c\\c2w\\c2w_scene_checkpoint_audit.csv",
+    "noise_support_failure_samples_csv": "outputs\\diagnostics\\design_c\\c2w\\c2w_noise_support_failure_samples.csv",
+    "zero_support_scenes_csv": "outputs\\diagnostics\\design_c\\c2w\\c2w_zero_support_scenes.csv",
+    "summary_txt": "outputs\\diagnostics\\design_c\\c2w\\c2w_fullarchive_qa_summary.txt",
+    "qa_json": "outputs\\diagnostics\\design_c\\c2w\\c2w_fullarchive_qa.json"
+  },
+  "groundwater_values_read": false,
+  "irrigation_flow_values_read": false,
+  "ricefloodit_flood_values_read": false,
+  "threshold_selected": false,
+  "classifier_fitted": false,
+  "association_models_fitted": 0
+}
