@@ -1,0 +1,107 @@
+{
+  "all_primary_and_sensitivity_wcr31_p_above_0_05": true,
+  "claims": {
+    "causal_limit": "All estimates are observational. They do not identify causal effects of irrigation, inundation, recharge, canal delivery, or pumping.",
+    "overall": "The evidence is directionally suggestive at the frozen 10-km scale but not statistically conclusive and not spatial-scale robust.",
+    "primary_result": "The frozen primary estimate is negative, corresponding to more flooding-like Sentinel-1 exposure being associated with shallower August groundwater after adjustment for antecedent groundwater, well fixed effects, and year fixed effects.",
+    "radius_interpretation_limit": "The radius sensitivities change both exposure representation and sample composition, so coefficient differences cannot be attributed to spatial scale alone.",
+    "spatial_scale_instability": "The sign is not stable across the prespecified spatial-radius sensitivities: the 5-km estimate is positive whereas the 10-km and 20-km estimates are negative.",
+    "uncertainty": "The primary confidence interval crosses zero and neither the primary CRV1 test nor the prespecified WCR31-Webb robustness test provides clear evidence of a non-zero association.",
+    "within_architecture_stability": "The negative direction is retained under complete-four-track restriction, removal of antecedent-groundwater adjustment, and 31 of 32 leave-one-well-out fits."
+  },
+  "direction_stability": {
+    "complete4_negative": true,
+    "five_km_negative": false,
+    "loo_negative_n": 31,
+    "loo_positive_n": 1,
+    "loo_total_n": 32,
+    "loo_zero_n": 0,
+    "primary_negative": true,
+    "twenty_km_negative": true,
+    "without_antecedent_negative": true
+  },
+  "generated_utc": "2026-09-07T22:22:03.281683+00:00",
+  "leave_one_well_out": {
+    "beta_max": 0.0861360681060366,
+    "beta_min": -0.369156877437351,
+    "fits": 32,
+    "negative": 31,
+    "positive": 1,
+    "positive_omitted_stations": [
+      "PO0180490U0003"
+    ],
+    "zero": 0
+  },
+  "model_search_performed": false,
+  "new_association_model_fitted": false,
+  "new_raw_data_read": false,
+  "primary": {
+    "beta_hat": -0.3067091565754908,
+    "crv1_ci95_high": 0.1543242349992083,
+    "crv1_ci95_low": -0.76774254815019,
+    "crv1_df": 31,
+    "crv1_p_two_sided": 0.1846383476645589,
+    "crv1_se": 0.2260506751692632,
+    "crv1_t": -1.356815927870296,
+    "first_year": 2015,
+    "last_year": 2025,
+    "n": 193,
+    "n_wells": 32,
+    "wcr31_webb_p_two_sided": 0.4941494149414941
+  },
+  "primary_result_replaced": false,
+  "result_driven_exclusion_performed": false,
+  "sample_and_exposure_audit": {
+    "10_vs_20_intersection_n": 193,
+    "10_vs_20_jaccard": 0.9507389162561576,
+    "10_vs_20_pearson_r": 0.9242064080433732,
+    "10_vs_20_spearman_rho": 0.9410995867778256,
+    "5_vs_10_intersection_n": 186,
+    "5_vs_10_jaccard": 0.9637305699481864,
+    "5_vs_10_pearson_r": 0.7175147425306644,
+    "5_vs_10_spearman_rho": 0.8314493957025213
+  },
+  "sensitivities": {
+    "20km_spatial_scale": {
+      "beta_hat": -1.0725575883168852,
+      "crv1_p_two_sided": 0.3693739210689515,
+      "n": 203,
+      "n_wells": 34,
+      "wcr31_webb_p_two_sided": 0.3166316631663166
+    },
+    "5km_spatial_scale": {
+      "beta_hat": 0.2029181477195668,
+      "crv1_p_two_sided": 0.0903501977357875,
+      "n": 186,
+      "n_wells": 30,
+      "wcr31_webb_p_two_sided": 0.5134513451345134
+    },
+    "complete4_track_support": {
+      "beta_hat": -0.293574095734687,
+      "crv1_p_two_sided": 0.5591177734488062,
+      "n": 157,
+      "n_wells": 26,
+      "wcr31_webb_p_two_sided": 0.883988398839884
+    },
+    "without_antecedent_groundwater": {
+      "beta_hat": -0.232495802155637,
+      "crv1_p_two_sided": 0.3750948170036671,
+      "n": 193,
+      "n_wells": 32,
+      "wcr31_webb_p_two_sided": 0.4405440544054405
+    }
+  },
+  "sha256": {
+    "final_result_table": "09a2292ad8a73ebdc97fd06e637fdf425f6c6a55af649c790152582a4fcb5112",
+    "stage56_qa": "0d07db5b733d39de9724c6fbcf6ebf080a1e0cc8eb08d829081136f8b4657192",
+    "stage56_result": "083e9013bb36d4fd9e6470dd84645dbaafcb0cdb1323904684b4ee659e97e426",
+    "stage57_loo": "068d69eecbe0b889ce69ec3ff0f2540de64fa222e4d40ccd867b5f8ed0525bc4",
+    "stage57_qa": "5a2381e3e1783ce820794e6621f19050c8f8228818d5b8b8ef871a0a1582e318",
+    "stage57_results": "a54574110cbfbf8b3a1f0dc1fe34c27ff33dda489a7c2014a09e686363693352",
+    "stage58_correlations": "f277006625efcff0efa24281f18c1ba02a4cce19d37a1f3dce8ccfc7a433cdb5",
+    "stage58_pairwise": "25c0499f419ecb85d0c48fb42ab31cf12d2c3c6ca6946f9fb4ecc488305e07fc",
+    "stage58_qa": "cdb97b4634551012ac26525f0ba4bbe542044692461911927dbf5d81a0a1b398"
+  },
+  "stage": "DESIGN_C_STAGE59_FINAL_GROUNDWATER_S1_SYNTHESIS",
+  "status": "FINAL_SYNTHESIS_FROZEN_NO_NEW_MODEL_FIT"
+}

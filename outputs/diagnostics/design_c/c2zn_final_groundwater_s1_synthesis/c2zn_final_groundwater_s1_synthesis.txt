@@ -1,0 +1,54 @@
+DESIGN C - STAGE 59 FINAL GROUNDWATER-SENTINEL-1 SYNTHESIS
+==============================================================================
+
+PRIMARY RESULT — FIXED
+----------------------
+N=193 well-years; wells=32; years=2015-2025
+beta=-0.306709156575
+CRV1 SE=0.226050675169
+CRV1 p=0.184638347665
+CRV1 95% CI=[-0.76774254815, 0.154324234999]
+WCR31-Webb p=0.494149414941
+
+PRESPECIFIED SENSITIVITIES
+---------------------------
+5km_spatial_scale: N=186, wells=30, beta=0.20291814772, CRV1 p=0.0903501977358, WCR31 p=0.513451345135
+20km_spatial_scale: N=203, wells=34, beta=-1.07255758832, CRV1 p=0.369373921069, WCR31 p=0.316631663166
+complete4_track_support: N=157, wells=26, beta=-0.293574095735, CRV1 p=0.559117773449, WCR31 p=0.88398839884
+without_antecedent_groundwater: N=193, wells=32, beta=-0.232495802156, CRV1 p=0.375094817004, WCR31 p=0.440544054405
+
+LEAVE-ONE-WELL-OUT
+------------------
+Negative coefficients: 31/32
+Positive coefficients: 1/32
+Coefficient range: [-0.369156877437, 0.086136068106]
+
+SPATIAL-SCALE / SAMPLE AUDIT
+----------------------------
+5 vs 10 km overlap: 186 well-years; Jaccard=0.963731
+5 vs 10 km exposure agreement: Pearson r=0.717515; Spearman rho=0.831449
+10 vs 20 km overlap: 193 well-years; Jaccard=0.950739
+10 vs 20 km exposure agreement: Pearson r=0.924206; Spearman rho=0.941100
+
+FROZEN SCIENTIFIC SYNTHESIS
+---------------------------
+1. The frozen primary estimate is negative, corresponding to more flooding-like Sentinel-1 exposure being associated with shallower August groundwater after adjustment for antecedent groundwater, well fixed effects, and year fixed effects.
+2. The primary confidence interval crosses zero and neither the primary CRV1 test nor the prespecified WCR31-Webb robustness test provides clear evidence of a non-zero association.
+3. The negative direction is retained under complete-four-track restriction, removal of antecedent-groundwater adjustment, and 31 of 32 leave-one-well-out fits.
+4. The sign is not stable across the prespecified spatial-radius sensitivities: the 5-km estimate is positive whereas the 10-km and 20-km estimates are negative.
+5. The radius sensitivities change both exposure representation and sample composition, so coefficient differences cannot be attributed to spatial scale alone.
+6. All estimates are observational. They do not identify causal effects of irrigation, inundation, recharge, canal delivery, or pumping.
+
+OVERALL CONCLUSION
+------------------
+The evidence is directionally suggestive at the frozen 10-km scale but not statistically conclusive and not spatial-scale robust.
+
+FIREWALL
+--------
+New association model fitted: False
+New raw data read: False
+Model search performed: False
+Result-driven exclusion performed: False
+Primary result replaced: False
+
+STAGE 59 STATUS: FINAL_SYNTHESIS_FROZEN_NO_NEW_MODEL_FIT
