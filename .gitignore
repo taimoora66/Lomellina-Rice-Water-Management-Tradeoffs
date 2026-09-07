@@ -114,3 +114,45 @@ outputs/diagnostics/design_c/c2qr_s1_point_polarization_collapsed.csv
 outputs/diagnostics/design_c/c2qr_s1_s2_point_matched.csv
 outputs/diagnostics/design_c/c2r_observed_ff_cross_sensor_joined.csv
 
+
+# =============================================================================
+# Design C local/generated scientific artifacts
+# =============================================================================
+
+# Local backups and review workspaces
+_backups/
+_design_c_canonical_review/
+
+# Script backups
+scripts/06_design_c/*.pre_*.py
+
+# Full Sentinel-1 checkpoint / mosaic archive
+outputs/diagnostics/design_c/c2v/
+
+# Temporary recovery and script-audit workspaces
+outputs/diagnostics/design_c/c2x_recovery/
+outputs/diagnostics/design_c/script_audit/
+
+# Terminal transcripts
+outputs/diagnostics/design_c/*_terminal.txt
+outputs/diagnostics/design_c/*_terminal
+
+# Large generated point-level measurement products
+outputs/diagnostics/design_c/c2m_target_point_signal_samples.csv
+outputs/diagnostics/design_c/c2n_scene_point_calibrated_samples.csv
+outputs/diagnostics/design_c/c2nr_scene_point_calibrated_samples.csv
+outputs/diagnostics/design_c/c2o_scene_point_noise_corrected_samples.csv
+outputs/diagnostics/design_c/c2or_scene_point_noise_corrected_samples.csv
+outputs/diagnostics/design_c/c2q_s1_point_polarization_collapsed.csv
+outputs/diagnostics/design_c/c2qr_s1_point_polarization_collapsed.csv
+outputs/diagnostics/design_c/c2qr_s1_s2_point_matched.csv
+outputs/diagnostics/design_c/c2r_observed_ff_cross_sensor_joined*
+outputs/diagnostics/design_c/c2pb_scl_point_samples.csv
+outputs/diagnostics/design_c/c2pc_sentinel2_boa_point_samples.csv
+outputs/diagnostics/design_c/c2pc2_sentinel2_boa_point_samples.csv
+
+# Raw / downloaded Design C datasets
+# Keep locally; archive externally with provenance/checksums.
+data/design_c/raw/
+data/design_c/derived_public_archive/
+
