@@ -1,0 +1,137 @@
+{
+  "stage": "DESIGN_C_STAGE46_FREEZE_RICEFLOODIT_CONSTRUCT_VALIDATION_PROTOCOL",
+  "generated_utc": "2026-09-07T18:19:38.092999+00:00",
+  "status": "PROTOCOL_FROZEN_NO_VALIDATION_EXECUTED",
+  "frozen_upstream_state": {
+    "stage45_status_required": "PASS_PHENOLOGY_FEATURE_FREEZE_READY",
+    "stage45_status_observed": "PASS_PHENOLOGY_FEATURE_FREEZE_READY",
+    "phenology_freeze_manifest": "outputs\\diagnostics\\design_c\\c2x_phenology\\c2x_phenology_freeze_manifest.csv",
+    "phenology_freeze_manifest_sha256": "2bbda2cb4e0acfb5cd56bd66581adc007ba68f8bd0de38c658bb5d2a458be8b5",
+    "phenology_feature_dictionary": "outputs\\diagnostics\\design_c\\c2x_phenology\\c2x_s1_feature_dictionary.csv"
+  },
+  "validation_target": {
+    "construct": "RiceFloodIT annual/seasonal flooding frequency",
+    "role": "external construct validation only; not feature construction, not groundwater-outcome tuning, and not irrigation-flow tuning",
+    "years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021
+    ],
+    "overlap_period_reason": "Sentinel-1 frozen archive begins in 2015 and observed RiceFloodIT is used only over the predeclared overlapping observed period through 2021."
+  },
+  "unit_of_validation": {
+    "primary_cell": "support_id x year x orbit_state x relative_orbit",
+    "track_pooling_before_validation": false,
+    "tracks": [
+      {
+        "orbit_state": "ascending",
+        "relative_orbit": 15
+      },
+      {
+        "orbit_state": "ascending",
+        "relative_orbit": 88
+      },
+      {
+        "orbit_state": "descending",
+        "relative_orbit": 66
+      },
+      {
+        "orbit_state": "descending",
+        "relative_orbit": 168
+      }
+    ],
+    "minimum_valid_supports_per_year_track_feature_cell": 100
+  },
+  "primary_features": [
+    "vv_p10_db",
+    "vh_p10_db",
+    "vv_minus_vh_p10_db",
+    "early_season_vv_median_db",
+    "early_season_vh_median_db",
+    "early_season_vv_minus_vh_median_db"
+  ],
+  "secondary_sensitivity_features": [
+    "vv_median_db",
+    "vh_median_db",
+    "vv_minus_vh_median_db",
+    "vv_iqr_db",
+    "vh_iqr_db",
+    "vv_minus_vh_iqr_db",
+    "vv_range_db",
+    "vh_range_db",
+    "vv_minus_vh_range_db",
+    "mid_season_vv_median_db",
+    "mid_season_vh_median_db",
+    "mid_season_vv_minus_vh_median_db",
+    "late_season_vv_median_db",
+    "late_season_vh_median_db",
+    "late_season_vv_minus_vh_median_db"
+  ],
+  "metrics": {
+    "primary": [
+      "Spearman rank correlation within each year-track cell",
+      "direction/sign by year-track cell",
+      "median Spearman rho within track across eligible years",
+      "median absolute Spearman rho within track across eligible years",
+      "sign-agreement share within track across eligible years",
+      "majority direction within track",
+      "track-to-track direction consistency",
+      "spatial-block-bootstrap confidence interval for cell-level Spearman rho"
+    ],
+    "not_used_for_selection": [
+      "nominal p-value",
+      "minimum p-value",
+      "maximum correlation winner",
+      "best-performing year",
+      "best-performing track"
+    ]
+  },
+  "spatial_bootstrap": {
+    "enabled": true,
+    "replicates": 2000,
+    "seed": 46017,
+    "spatial_crs": "EPSG:32632",
+    "block_size_m": 10000,
+    "confidence_level": 0.95,
+    "resampling_unit": "fixed 10-km spatial blocks within each year-track cell",
+    "p_values_computed": false
+  },
+  "construct_consistency_screen": {
+    "minimum_eligible_years_per_track": 5,
+    "minimum_within_track_sign_agreement_share": 0.75,
+    "minimum_within_track_median_absolute_spearman": 0.2,
+    "minimum_tracks_with_consistent_majority_direction": 3,
+    "direction_predeclared": false,
+    "interpretation": "A feature is construct-consistent only if its association direction and magnitude are reasonably stable across years and track geometries. The sign itself is not chosen in advance because rice backscatter can depend on crop structure and acquisition geometry."
+  },
+  "decision_rules": {
+    "primary_family_only_can_support_main_construct_freeze": true,
+    "secondary_family_can_replace_failed_primary_feature": false,
+    "choose_single_best_feature_by_ricefloodit_performance": false,
+    "retain_all_primary_features_passing_consistency_screen": true,
+    "if_no_primary_feature_passes": "Do not tune a new feature or threshold. Record construct-validation failure/inconclusiveness and redesign only in a separately versioned post-validation exploratory branch.",
+    "if_multiple_primary_features_pass": "Retain the passing set as a construct-valid measurement family; do not rank by maximum rho or minimum uncertainty."
+  },
+  "missingness_policy": {
+    "sentinel1_missing_values": "remain missing; no imputation",
+    "ricefloodit_missing_values": "complete-case within the predeclared cell",
+    "minimum_cell_n": 100,
+    "no_nearest_year_substitution": true,
+    "no_nearest_support_substitution": true
+  },
+  "firewall": {
+    "groundwater_values_read": false,
+    "irrigation_flow_values_read": false,
+    "ricefloodit_flood_values_read": false,
+    "ricefloodit_validation_executed": false,
+    "inundation_threshold_selected": false,
+    "classifier_fitted": false,
+    "feature_selection_against_groundwater_performed": false,
+    "feature_selection_against_irrigation_flow_performed": false,
+    "association_models_fitted": 0
+  }
+}

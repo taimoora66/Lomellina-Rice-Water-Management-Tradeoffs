@@ -1,0 +1,53 @@
+DESIGN C - STAGE 46 FROZEN RICEFLOODIT CONSTRUCT-VALIDATION PROTOCOL
+==================================================================================
+
+Upstream Stage-45 status: PASS_PHENOLOGY_FEATURE_FREEZE_READY
+Freeze-manifest SHA256: 2bbda2cb4e0acfb5cd56bd66581adc007ba68f8bd0de38c658bb5d2a458be8b5
+
+VALIDATION TARGET
+-----------------
+RiceFloodIT annual/seasonal flooding frequency.
+Observed overlap years: 2015-2021.
+Tracks remain separate: asc15, asc88, desc66, desc168.
+
+PRIMARY FEATURES
+----------------
+- vv_p10_db
+- vh_p10_db
+- vv_minus_vh_p10_db
+- early_season_vv_median_db
+- early_season_vh_median_db
+- early_season_vv_minus_vh_median_db
+
+PRIMARY METRICS
+---------------
+Within each year-track cell: Spearman rho and fixed 10-km spatial-block-bootstrap 95% CI.
+Across years: median rho, median |rho|, sign agreement, majority direction.
+Across tracks: direction consistency.
+Nominal p-values are not used for feature selection.
+
+CONSISTENCY SCREEN
+------------------
+Minimum valid support points per cell: 100
+Minimum eligible years per track: 5
+Minimum within-track sign agreement: 75%
+Minimum within-track median |rho|: 0.20
+Minimum tracks with consistent majority direction: 3/4
+
+DECISION FIREWALL
+-----------------
+No single best feature will be chosen by maximum RiceFloodIT correlation.
+Secondary features cannot replace failed primary features.
+If no primary feature passes, no post-hoc threshold/feature tuning is allowed in this frozen confirmatory path.
+
+FIREWALL
+--------
+Groundwater read: False
+Irrigation-flow read: False
+RiceFloodIT flood values read: False
+RiceFloodIT validation executed: False
+Threshold selected: False
+Classifier fitted: False
+Association model fitted: False
+
+STAGE 46 STATUS: PROTOCOL_FROZEN_NO_VALIDATION_EXECUTED
